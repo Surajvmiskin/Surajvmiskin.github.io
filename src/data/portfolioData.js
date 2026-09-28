@@ -1,8 +1,8 @@
 export const portfolioData = {
   personal: {
     name: "Suraj Vinod Miskin",
-    role: "Automation, ADAS & Applied AI Engineer",
-    subRole: "Bridging Automotive Embedded Networks, ADAS Validation & Generative AI Systems",
+    role: "Python Automation & Systems Engineer",
+    subRole: "Building Robust Python Automation Frameworks, ADAS Validation Pipelines & Applied AI",
     email: "surajvmiskin@gmail.com",
     phone: "+91 80952 93563",
     location: "Bengaluru, India",
@@ -10,56 +10,46 @@ export const portfolioData = {
     github: "https://github.com/Surajvmiskin",
     linkedin: "https://www.linkedin.com/in/suraj-v-miskin/",
     twitter: "https://twitter.com/Surajvmiskin",
-    resumeUrl: "#contact", // or PDF download
-    bio: "Embedded & Automation Engineer at Tata Elxsi specializing in ADAS feature testing, system-level validation for MBRDI (Mercedes-Benz R&D India), Python-based test automation, and vehicle diagnostics. Passionate about applying modern Machine Learning, RAG architectures, and cybersecurity deep learning models to vehicle and power engineering.",
+    resumeUrl: "/Suraj_Vinod_Miskin_Resume.pdf",
+    bio: "Python Automation and Systems Engineer at Tata Elxsi Bengaluru. Specializing in Python-driven test automation frameworks, automated validation pipelines for ADAS features (MBRDI project), vehicle diagnostic scripting, and applied AI deep learning systems. Dedicated to transforming manual verification workflows into scalable, repeatable Python automated test suites.",
   },
   metrics: [
-    { label: "Automotive Industry Experience", value: "1+ Yrs", detail: "Tata Elxsi & Mahindra DTC" },
-    { label: "Peer-Reviewed IEEE Publication", value: "1 Paper", detail: "ICMNWC 2024 / IEEE Xplore" },
-    { label: "B.E. Electrical & Electronics", value: "8.29 GPA", detail: "KLE Technological University" },
-    { label: "Open-Source Repositories", value: "20+ Repos", detail: "Automotive, AI & Data Systems" },
+    { label: "Primary Expertise", value: "Python Automation", detail: "Frameworks, PyTest & Scripts" },
+    { label: "ADAS & Diagnostics", value: "Tata Elxsi", detail: "Active Client: MBRDI ADAS" },
+    { label: "Peer-Reviewed IEEE", value: "1 Paper", detail: "ICMNWC 2024 / IEEE Xplore" },
+    { label: "B.E. Electrical & Electronics", value: "8.29", detail: "KLE Technological University" },
   ],
   experience: [
     {
-      company: "TATA ELXSI (MBRDI Project)",
-      role: "Automation and Validation Engineer",
-      duration: "8 months (Current)",
+      company: "TATA ELXSI (Onsite at Mercedes-Benz R&D)",
+      role: "Engineer – ADAS System Digital Validation",
+      duration: "Nov 2025 – Present",
       location: "Bengaluru, India",
-      badge: "ADAS System Testing",
+      badge: "Python Automation & ADAS",
       badgeColor: "cyan",
       points: [
-        "Executing comprehensive ADAS feature testing and system-level validation for MBRDI (Mercedes-Benz Research and Development India), validating core active safety functionalities.",
-        "Developing Python-based automation frameworks and test pipelines to streamline ADAS test case execution, diagnostic log analysis, and validation reporting.",
-        "Leveraging Vector CANoe, automotive diagnostic tools, and CAN communication protocols to verify sensor behaviors and ECU functional integrity.",
+        "Developed and deployed Python-based automation frameworks to streamline ADAS ECU validation workflows, reducing manual analysis effort and improving execution efficiency.",
+        "Designed and implemented a GUI-based automation tool (CustomTkinter) for end-to-end test execution, including test case selection and automated report triggering.",
+        "Automated log parsing and conversion pipelines by building Python scripts to process network telemetry for ADAS signal validation.",
+        "Integrated test automation with Linux-based test benches using SSH-based remote command execution to trigger evaluation scripts.",
+        "Collaborated with cross-functional teams to debug integration issues and deliver high-quality validation reports to OEM stakeholders."
       ],
-      tools: ["Python", "Vector CANoe", "ADAS System Testing", "Feature Validation", "MBRDI Testing", "MATLAB", "OBD Tools", "CAN Protocol"]
+      tools: ["Python", "CustomTkinter GUI", "Test Automation", "Vector CANoe", "ADAS ECU Validation", "Linux / SSH", "CAN Protocol", "Automated Reporting"]
     },
     {
-      company: "TATA ELXSI (Mahindra & Mahindra Project)",
-      role: "Embedded Software Engineer",
-      duration: "3 months",
+      company: "TATA ELXSI (Project: Mahindra & Mahindra)",
+      role: "Engineer – Vehicle Diagnostics",
+      duration: "Dec 2024 – Oct 2025",
       location: "Chakan, Pune (On-site)",
       badge: "Vehicle Diagnostics",
       badgeColor: "amber",
       points: [
-        "Served as an integral member of the Diagnostic Trouble Code (DTC) Clearance Team, ensuring vehicle system integrity prior to production commercial release.",
-        "Utilized the Mahindra Intelligence Diagnostic Assistance (MIDA) platform to identify, isolate, and clear complex ECU faults across vehicle subsystems.",
-        "Gained direct hands-on exposure to automotive Electronic Control Units (ECUs), CAN bus communication protocols, and diagnostic validation standards.",
+        "Served as a member of the Diagnostic Trouble Code (DTC) Clearance Team, ensuring vehicle system integrity and functional safety before production release.",
+        "Utilized the Mahindra Intelligence Diagnostic Assistance (MIDA) platform to identify, diagnose, and clear vehicle faults across multiple engine and body control modules.",
+        "Gained hands-on expertise in CAN communication and diagnostic validation workflows, working directly on vehicle ECUs to resolve integration issues.",
+        "Coordinated with production and quality teams to validate fix implementations, ensuring zero-defect rollout for upcoming vehicle models."
       ],
-      tools: ["MIDA Diagnostic Tool", "CAN Protocol", "ECU Diagnostics", "DTC Clearance", "Automotive Validation"]
-    },
-    {
-      company: "Pravinya Information Technology Services",
-      role: "Full Stack Developer",
-      duration: "01/2024 - 05/2024",
-      location: "Hubli, India",
-      badge: "Software Systems",
-      badgeColor: "slate",
-      points: [
-        "Engineered scalable web applications and administrative dashboards using Python, Django, MySQL, and JavaScript.",
-        "Designed structured REST APIs and responsive user interfaces with cross-browser compatibility.",
-      ],
-      tools: ["Python", "Django", "MySQL", "JavaScript", "REST APIs"]
+      tools: ["MIDA Diagnostic Tool", "CAN Protocol", "ECU Diagnostics", "DTC Clearance", "Automotive Validation", "Quality Assurance"]
     }
   ],
   publication: {
@@ -67,137 +57,156 @@ export const portfolioData = {
     conference: "IEEE 2023 3rd International Conference on Mobile Networks and Wireless Communications (ICMNWC)",
     date: "February 2024",
     publisher: "IEEE Xplore",
-    doiLink: "https://ieeexplore.ieee.org",
+    doiLink: "https://ieeexplore.ieee.org/document/10435897",
     status: "Published & Indexed",
-    abstract: "Modern electric vehicle (EV) charging stations rely on interconnected communication protocols that expose critical infrastructure to cybersecurity exploits and network intrusion threats. This research presents a deep learning-based intrusion detection framework trained using TensorFlow to classify and detect anomalous cyber threats with high accuracy, bolstering EV charging resilience.",
-    tags: ["IEEE Xplore", "TensorFlow", "Deep Learning", "EV Charging", "Cybersecurity", "Anomaly Detection"]
+    abstract: "Modern electric vehicle (EV) charging stations rely on interconnected communication protocols that expose critical infrastructure to cybersecurity exploits and network intrusion threats. This research presents a deep learning-based intrusion detection framework trained using TensorFlow in Python to classify and detect anomalous cyber threats with high accuracy, bolstering EV charging resilience.",
+    tags: ["Python", "IEEE Xplore", "TensorFlow", "Deep Learning", "EV Charging", "Cybersecurity", "Anomaly Detection"]
   },
   projects: [
     {
-      id: "ev-intrusion-ids",
-      title: "EV Charging Infrastructure Intrusion Detection System",
-      category: "ai",
-      categoryLabel: "AI & Cybersecurity",
-      badge: "IEEE Published",
+      id: "python-gui-automation",
+      title: "Python GUI Automation Tool (CustomTkinter)",
+      category: "python",
+      categoryLabel: "Python & Automation",
+      badge: "Desktop Automation",
       badgeColor: "cyan",
-      shortDesc: "Deep learning neural network built with TensorFlow to detect and classify cyber threats in connected EV charging networks.",
-      problem: "Connected EV charging stations are susceptible to unauthorized network attacks that can jeopardize vehicle safety and the power distribution grid.",
-      solution: "Developed and trained deep learning models in TensorFlow with specialized dataset preprocessing, feature engineering, and high-precision anomaly scoring.",
-      impact: "Published in IEEE ICMNWC 2024 proceedings on IEEE Xplore.",
-      tags: ["TensorFlow", "Deep Learning", "Cybersecurity", "Python", "IEEE Xplore"],
+      shortDesc: "GUI-based automation tool built with CustomTkinter to automate network trace conversion, test case filtering, and automated report triggering.",
+      problem: "Engineers had to manually convert raw network packet captures (PCAP) and configure test triggers via command-line scripts, which was repetitive and error-prone.",
+      solution: "Architected a desktop GUI tool in Python using CustomTkinter that parses network packet captures, auto-extracts telemetry, filters test cases, and triggers automated validation reports.",
+      impact: "Reduced manual data processing time significantly by implementing automated file parsing and formatting logic.",
+      tags: ["Python", "CustomTkinter", "PCAP Conversion", "GUI Tool", "Test Automation", "Log Parsing"],
       link: "https://github.com/Surajvmiskin",
       github: "https://github.com/Surajvmiskin"
     },
     {
-      id: "adas-rag-pipeline",
-      title: "ADAS Diagnostic & Validation RAG Pipeline",
-      category: "automotive",
-      categoryLabel: "Automotive & ADAS",
-      badge: "Tata Elxsi Project",
+      id: "adas-python-automation",
+      title: "Automated ADAS Test Runner & Telemetry Suite",
+      category: "python",
+      categoryLabel: "Python & Automation",
+      badge: "Flagship Framework",
       badgeColor: "cyan",
-      shortDesc: "LangChain-powered vector retrieval system for querying complex ADAS vehicle test datasets and diagnostic logs using natural language.",
-      problem: "Automotive validation engineers spend hours manually inspecting voluminous test datasets and CAN diagnostic logs during ADAS feature validation cycles.",
-      solution: "Engineered a scalable Python ingestion pipeline that parses, indexes, and vectorizes vehicle test logs into vector stores queryable via LangChain RAG.",
-      impact: "Accelerated edge-case anomaly triage and automated validation report generation for vehicle test runs.",
-      tags: ["Python", "LangChain", "RAG", "Vector Search", "ADAS Validation", "Test Automation"],
+      shortDesc: "Modular Python test automation harness automating ADAS scenario test execution, CAN diagnostic logging, and automated pass/fail verification.",
+      problem: "Manual execution of hundreds of ADAS test scenarios across vehicle configurations requires excessive time and is prone to human oversight.",
+      solution: "Engineered an end-to-end Python automation framework that programmatically configures test parameters, triggers simulation runs via CANoe, extracts diagnostic telemetry, and outputs automated HTML/JSON test reports.",
+      impact: "Replaced manual test triggers with scalable Python automated test suites, accelerating regression cycles and defect reporting.",
+      tags: ["Python", "PyTest", "Test Automation", "Vector CANoe API", "ADAS Validation", "Log Parsing"],
       link: "https://github.com/Surajvmiskin",
+      github: "https://github.com/Surajvmiskin"
+    },
+    {
+      id: "embedded-power-window",
+      title: "Embedded Microcontroller Power Window System",
+      category: "software",
+      categoryLabel: "Embedded & Safety",
+      badge: "Firmware Project",
+      badgeColor: "cyan",
+      shortDesc: "Microcontroller firmware developed in Embedded C for an automotive power window system featuring safety-critical anti-pinch logic.",
+      problem: "Automotive power window systems require reliable obstacle detection and anti-pinch safety logic to prevent injury during automatic window roll-up.",
+      solution: "Engineered firmware for the PIC16F877A microcontroller in Embedded C, implementing dual-mode manual and automatic operations with real-time response timings.",
+      impact: "Successfully validated obstacle detection interrupt response times and motor drive safety controls under simulation.",
+      tags: ["Embedded C", "PIC16F877A", "Microcontrollers", "Safety Logic", "Firmware", "Automotive Systems"],
+      link: "https://github.com/Surajvmiskin",
+      github: "https://github.com/Surajvmiskin"
+    },
+    {
+      id: "ev-intrusion-ids",
+      title: "EV Charging Infrastructure Intrusion Detection System",
+      category: "ai",
+      categoryLabel: "Python & Deep Learning",
+      badge: "IEEE Published",
+      badgeColor: "cyan",
+      shortDesc: "Python and TensorFlow deep learning neural network built to detect and classify cyber threats in connected EV charging networks.",
+      problem: "Connected EV charging stations are susceptible to unauthorized network attacks that can jeopardize vehicle safety and the power distribution grid.",
+      solution: "Developed and trained deep learning models in Python using TensorFlow with specialized dataset preprocessing, feature engineering, and high-precision anomaly scoring.",
+      impact: "Published in IEEE ICMNWC 2024 proceedings on IEEE Xplore.",
+      tags: ["Python", "TensorFlow", "Deep Learning", "Cybersecurity", "IEEE Xplore"],
+      link: "https://ieeexplore.ieee.org/document/10435897",
+      paperUrl: "https://ieeexplore.ieee.org/document/10435897",
       github: "https://github.com/Surajvmiskin"
     },
     {
       id: "power-fault-classification",
       title: "Power Transmission Line Electrical Fault Classifier",
       category: "ai",
-      categoryLabel: "AI & Power Systems",
+      categoryLabel: "Python & Neural Nets",
       badge: "Open Source",
       badgeColor: "slate",
-      shortDesc: "Neural network framework classifying symmetric and asymmetric electrical faults in high-voltage power transmission lines.",
+      shortDesc: "Python neural network framework classifying symmetric and asymmetric electrical faults in high-voltage power transmission lines.",
       problem: "Immediate identification of electrical line faults (line-to-ground, line-to-line, double-line) is paramount to prevent grid blackout cascades.",
-      solution: "Trained neural network architectures on multi-bus electrical transmission telemetry to accurately identify and isolate fault classifications in milliseconds.",
+      solution: "Trained neural network architectures in Python on multi-bus electrical transmission telemetry to accurately identify and isolate fault classifications in milliseconds.",
       impact: "Publicly accessible open-source repository bridging electrical systems and machine learning.",
-      tags: ["Neural Networks", "Python", "Power Systems", "Keras", "Fault Analysis"],
+      tags: ["Python", "Neural Networks", "Power Systems", "Keras", "Fault Analysis"],
       link: "https://github.com/Surajvmiskin/power-fault-classification",
       github: "https://github.com/Surajvmiskin/power-fault-classification"
-    },
-    {
-      id: "ev-grid-harmonics",
-      title: "Impact of EV Charging Stations on Utility Grid Power Quality",
-      category: "automotive",
-      categoryLabel: "EV & Power Engineering",
-      badge: "Research Study",
-      badgeColor: "amber",
-      shortDesc: "Mathematical simulation modeling the harmonic distortion induced by high-density EV charging stations on distribution grids.",
-      problem: "Rapid deployment of fast-charging stations introduces non-linear load harmonics that degrade distribution transformer lifespans.",
-      solution: "Conducted extensive MATLAB/Simulink harmonic analysis across multi-station loading scenarios.",
-      impact: "Quantified THD escalation from 9.1% (single station) to 16.91% (three) and 20.99% (five), proving critical thresholds for passive/active filtering.",
-      tags: ["MATLAB", "Simulink", "EV Stations", "Power Quality", "Harmonics"],
-      link: "https://github.com/Surajvmiskin",
-      github: "https://github.com/Surajvmiskin"
     },
     {
       id: "babi-chatbot",
       title: "Contextual Conversational AI Engine (bAbI Benchmark)",
       category: "ai",
-      categoryLabel: "NLP & Reasoning",
+      categoryLabel: "Python & NLP",
       badge: "85% Accuracy",
       badgeColor: "slate",
-      shortDesc: "Interactive question-answering system using multi-layer attention networks trained on the Facebook bAbI reasoning dataset.",
+      shortDesc: "Interactive question-answering system using multi-layer attention networks in Python trained on the Facebook bAbI reasoning dataset.",
       problem: "Standard rule-based chatbots fail to perform multi-hop reasoning over contextual story statements.",
-      solution: "Implemented memory networks and attention mechanisms in Keras, wrapped in a responsive user-facing desktop GUI.",
+      solution: "Implemented memory networks and attention mechanisms in Python/Keras, wrapped in a responsive desktop GUI.",
       impact: "Achieved 85% accuracy on multi-step reasoning benchmarks with a 10% boost through multi-layer attention.",
-      tags: ["Keras", "NLP", "Attention Mechanism", "Python GUI", "Conversational AI"],
+      tags: ["Python", "Keras", "NLP", "Attention Mechanism", "Desktop GUI"],
       link: "https://github.com/Surajvmiskin/bAbI_Chatbot_using_keras",
       github: "https://github.com/Surajvmiskin/bAbI_Chatbot_using_keras"
     },
     {
       id: "jpmc-financial-feed",
       title: "Real-Time Financial Telemetry & Charting Feeds",
-      category: "software",
-      categoryLabel: "Systems & Data",
+      category: "python",
+      categoryLabel: "Python & Systems",
       badge: "JPMorgan Chase SWE",
       badgeColor: "slate",
       shortDesc: "Real-time streaming data visualization platform processing high-frequency stock trade feeds.",
       problem: "Monitoring market spread anomalies across volatile order books requires low-latency stream rendering.",
-      solution: "Implemented streaming web socket listeners and live chart rendering using Perspective and TypeScript.",
+      solution: "Implemented Python streaming listeners and live chart rendering using Perspective and TypeScript.",
       impact: "Completed JPMorgan Chase Software Engineering Virtual Experience.",
-      tags: ["TypeScript", "Perspective", "Python", "Streaming Feeds", "Financial Data"],
+      tags: ["Python", "TypeScript", "Perspective", "Streaming Feeds", "Financial Data"],
       link: "https://github.com/Surajvmiskin",
       github: "https://github.com/Surajvmiskin"
     }
   ],
   skills: [
     {
-      category: "Automotive & Diagnostics",
-      icon: "car",
-      description: "Embedded vehicle communication, test automation & ECU diagnostics",
-      items: [
-        "Vector CANoe", "CAN Protocol", "ADAS System Testing", "Feature Validation",
-        "MIDA Diagnostic Tool", "DTC Clearance", "MBRDI Validation", "ECU Architecture"
-      ]
-    },
-    {
-      category: "AI, GenAI & Data Science",
-      icon: "brain",
-      description: "Generative AI, vector retrieval & neural deep learning models",
-      items: [
-        "RAG (Retrieval-Augmented)", "LangChain", "TensorFlow", "Keras", 
-        "Deep Learning", "Anomaly Detection", "NumPy", "Data Pipelines"
-      ]
-    },
-    {
-      category: "Languages & Programming",
+      category: "Python & Test Automation",
+      isPrimary: true,
       icon: "code",
-      description: "Systems programming, automation scripting & databases",
+      description: "Core strength: automated test suites, PyTest, automation harnesses & scalable scripting",
       items: [
-        "Python", "C", "C++", "Embedded C", "SQL", "Linux / Bash", "Django", "Git / GitHub"
+        "Python 3.x (Advanced)", "PyTest & Unittest", "Test Automation Frameworks",
+        "Automated Test Harnesses", "Test Scripting & Execution", "Object-Oriented Design (OOP)",
+        "CANoe Automation (Python/COM)", "Log Parsing & Telemetry Extraction", "REST APIs & Backend", "CI/CD & Git Automation"
       ]
     },
     {
-      category: "Electrical & EV Technologies",
-      icon: "zap",
-      description: "Grid integration, battery systems & power quality modeling",
+      category: "ADAS & Automotive Validation",
+      icon: "car",
+      description: "System-level feature testing, MBRDI validation, ECU diagnostics & CAN networks",
       items: [
-        "EV Charging Tech", "Battery Management (BMS)", "Electric Machines",
-        "Power Quality & Harmonics", "MATLAB / Simulink", "Transmission Faults"
+        "ADAS System Testing", "MBRDI Feature Validation", "Vector CANoe", "CAN Communication",
+        "MIDA Diagnostic Tool", "DTC Clearance", "ECU Architecture", "Active Safety Features"
+      ]
+    },
+    {
+      category: "Machine Learning & Deep Learning",
+      icon: "brain",
+      description: "Neural network architectures, TensorFlow deep learning, NLP reasoning & anomaly detection",
+      items: [
+        "TensorFlow & Keras", "Deep Learning Models", "Neural Networks", "Anomaly Detection",
+        "NLP & Dialog Modeling", "NumPy & Pandas", "Data Preprocessing", "Feature Engineering"
+      ]
+    },
+    {
+      category: "Software Engineering & Tools",
+      icon: "zap",
+      description: "Systems programming, frameworks, database systems & engineering tools",
+      items: [
+        "C & C++", "Django Framework", "Linux / Bash Shell", "SQL & Relational DBs",
+        "MATLAB / Simulink", "Git & GitHub", "Battery Management (BMS)", "Power Quality & Systems"
       ]
     }
   ],
@@ -206,9 +215,9 @@ export const portfolioData = {
     degree: "Bachelor of Engineering (B.E.) — Electrical & Electronics",
     duration: "Sep 2021 – May 2024",
     location: "Karnataka, India",
-    gpa: "8.29 / 10",
+    gpa: "8.29",
     keyCourses: [
-      "Machine Learning", "Data Structures", "OOPs with C++",
+      "Python & Machine Learning", "Data Structures & Algorithms", "OOPs with C++",
       "EV Technologies", "OS & Embedded Systems", "Battery Management Systems (BMS)"
     ]
   }

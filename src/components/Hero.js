@@ -24,15 +24,15 @@ export function renderHero() {
           <div class="lg:col-span-7 space-y-6">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
               <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-              Automotive Embedded &bull; ADAS Validation &bull; Generative AI
+              Python Automation &bull; ADAS Feature Validation &bull; Applied AI
             </div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-100 tracking-tight leading-[1.1]">
-              Engineering the <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 bg-clip-text text-transparent">Intelligence</span> Behind Connected Mobility.
+              Engineering High-Performance <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 bg-clip-text text-transparent">Python Automation</span> & Intelligent Systems.
             </h1>
 
             <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
-              I am <strong class="text-white">Suraj Vinod Miskin</strong>, an Automation & Validation Engineer at <strong class="text-cyan-400">Tata Elxsi</strong>. I specialize in system testing and feature validation for Advanced Driver Assistance Systems (<strong class="text-white">ADAS for MBRDI</strong>), test automation using Python and Vector CANoe, and developing intelligent AI/RAG diagnostic pipelines.
+              I am <strong class="text-white">Suraj Vinod Miskin</strong>, a Python Automation & Systems Engineer at <strong class="text-cyan-400">Tata Elxsi</strong>. I specialize in building robust Python test automation frameworks, automated validation suites for ADAS features (<strong class="text-white">MBRDI project</strong>), vehicle diagnostic scripting, and applied AI deep learning systems.
             </p>
 
             <!-- Action Triggers -->
@@ -68,7 +68,7 @@ export function renderHero() {
             </div>
           </div>
 
-          <!-- Right Column: Interactive Telemetry Deck -->
+          <!-- Right Column: Interactive Python Automation Deck -->
           <div class="lg:col-span-5 space-y-4">
             <!-- Terminal-styled Active State Box -->
             <div class="glass-card rounded-2xl p-5 border border-cyan-500/20 shadow-xl relative overflow-hidden">
@@ -77,17 +77,20 @@ export function renderHero() {
                   <span class="w-3 h-3 rounded-full bg-rose-500/80 inline-block"></span>
                   <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
                   <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
-                  <span class="ml-2 text-slate-300">suraj-telemetry.sys</span>
+                  <span class="ml-2 text-slate-300 font-semibold">python3 suraj_automation.py</span>
                 </div>
-                <span class="text-cyan-400">ACTIVE</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse mr-1.5"></span>RUNNING
+                </span>
               </div>
 
               <div class="font-mono text-xs space-y-2 text-slate-300">
-                <p><span class="text-cyan-400">&gt; CURRENT_ROLE:</span> "Automation & Validation Engineer @ Tata Elxsi"</p>
-                <p><span class="text-cyan-400">&gt; FOCUS_DOMAINS:</span> ["ADAS System Testing", "MBRDI Feature Validation", "CANoe"]</p>
-                <p><span class="text-cyan-400">&gt; APPLIED_AI:</span> ["RAG Query System", "LangChain", "TensorFlow IDS"]</p>
-                <p><span class="text-cyan-400">&gt; IEEE_STATUS:</span> "Published on IEEE Xplore (ICMNWC 2024)"</p>
-                <p><span class="text-emerald-400">&gt; DIAGNOSTICS:</span> "DTC Clearance Verified (Mahindra MIDA)"</p>
+                <p><span class="text-cyan-400">&gt;&gt;&gt;</span> <span class="text-slate-400"># Primary Engine</span></p>
+                <p><span class="text-cyan-400">&gt;&gt;&gt;</span> <span class="text-emerald-300">engineer.stack</span> = ["Python 3.x", "PyTest", "Automation Frameworks"]</p>
+                <p><span class="text-cyan-400">&gt;&gt;&gt;</span> <span class="text-emerald-300">engineer.role</span> = "Python Automation & Systems @ Tata Elxsi"</p>
+                <p><span class="text-cyan-400">&gt;&gt;&gt;</span> <span class="text-emerald-300">engineer.domain</span> = "ADAS System Testing (MBRDI Project)"</p>
+                <p><span class="text-cyan-400">&gt;&gt;&gt;</span> <span class="text-emerald-300">engineer.run_test_suite()</span></p>
+                <p class="text-emerald-400 pl-4 bg-emerald-950/30 py-1 rounded border border-emerald-500/20 font-bold">&check; 100% Tests Automated &bull; 0 Regressions &bull; Log Telemetry Verified</p>
               </div>
             </div>
 

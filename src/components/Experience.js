@@ -17,16 +17,20 @@ export function renderExperience() {
     `).join('');
 
     const pointsList = exp.points.map(pt => `
-      <li class="flex items-start gap-2.5 text-slate-300 text-sm leading-relaxed">
-        <span class="text-cyan-400 mt-1">&bull;</span>
-        <span>${pt}</span>
+      <li class="flex items-start gap-3 text-slate-200 text-sm sm:text-[14px] leading-relaxed group/item">
+        <span class="w-4 h-4 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center mt-0.5 flex-shrink-0 group-hover/item:border-cyan-400 group-hover/item:bg-cyan-500/20 transition-colors">
+          <svg class="w-2.5 h-2.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"/></svg>
+        </span>
+        <span class="text-slate-300 group-hover/item:text-slate-100 transition-colors">${pt}</span>
       </li>
     `).join('');
 
     return `
       <div class="relative pl-8 sm:pl-10 group">
-        <!-- Timeline Marker -->
-        <div class="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-carbon-900 border-2 border-cyan-400 group-hover:scale-125 group-hover:bg-cyan-400 transition-all shadow-md shadow-cyan-500/20"></div>
+        <!-- Timeline Marker Circle (Center mathematically at x=8px on the 2px spine line) -->
+        <div class="absolute left-0 top-7 -translate-y-1/2 w-4 h-4 rounded-full bg-[#0B0F19] border-2 border-cyan-400 group-hover:bg-cyan-400 group-hover:scale-125 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300 flex items-center justify-center z-10">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 group-hover:bg-[#070A0F] transition-colors"></span>
+        </div>
 
         <div class="glass-card rounded-2xl p-6 border border-white/10 hover:border-cyan-500/30 transition-all space-y-4">
           <div class="flex flex-wrap items-center justify-between gap-3">
@@ -46,7 +50,7 @@ export function renderExperience() {
             </div>
           </div>
 
-          <ul class="space-y-2 pt-1">
+          <ul class="space-y-2.5 pt-1">
             ${pointsList}
           </ul>
 
@@ -76,8 +80,11 @@ export function renderExperience() {
           </p>
         </div>
 
-        <!-- Timeline Container -->
-        <div class="relative border-l-2 border-white/10 ml-2 sm:ml-4 space-y-8">
+        <!-- Timeline Container with Centered Continuous Spine Line -->
+        <div class="relative ml-2 sm:ml-4 space-y-8">
+          <!-- Continuous Spine Line passing exactly through circle centers (x=8px) -->
+          <div class="absolute left-[7px] top-7 bottom-7 w-[2px] bg-slate-800/80 pointer-events-none"></div>
+
           ${items}
         </div>
 

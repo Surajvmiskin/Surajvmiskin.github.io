@@ -4,18 +4,25 @@ export function renderSkills() {
   const { skills, education } = portfolioData;
 
   const categoryCards = skills.map(cat => {
+    const isPrimary = !!cat.isPrimary;
+    const badgeStyle = isPrimary
+      ? 'bg-cyan-950/40 text-cyan-200 border-cyan-500/30 hover:border-cyan-400 hover:text-white'
+      : 'bg-carbon-900 text-slate-200 border-white/5 hover:border-cyan-500/30 hover:text-cyan-300';
+
     const badges = cat.items.map(item => `
-      <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-carbon-900 text-slate-200 border border-white/5 hover:border-cyan-500/30 hover:text-cyan-300 transition-colors">
+      <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-mono font-medium border transition-colors ${badgeStyle}">
         ${item}
       </span>
     `).join('');
 
     return `
-      <div class="glass-card rounded-2xl p-6 border border-white/10 space-y-4">
+      <div class="glass-card rounded-2xl p-6 ${isPrimary ? 'border-cyan-500/40 bg-cyan-950/15 shadow-xl shadow-cyan-500/5' : 'border-white/10'} space-y-4 relative overflow-hidden group">
+        ${isPrimary ? '<div class="absolute -top-10 -right-10 w-28 h-28 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>' : ''}
         <div>
-          <h3 class="text-lg font-bold text-white tracking-tight flex items-center justify-between">
-            <span>${cat.category}</span>
-          </h3>
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-bold text-white tracking-tight">${cat.category}</h3>
+            ${isPrimary ? '<span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>PRIMARY FOCUS</span>' : ''}
+          </div>
           <p class="text-xs text-slate-400 mt-1">${cat.description}</p>
         </div>
 

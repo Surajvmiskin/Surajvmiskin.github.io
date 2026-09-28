@@ -5,9 +5,7 @@ export function renderNavbar() {
         
         <!-- Brand & Status -->
         <a href="#hero" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-mono font-bold text-black text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
-            SM
-          </div>
+          <img src="/favicon.svg" alt="Suraj Vinod Miskin Logo" class="w-10 h-10 rounded-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 group-hover:shadow-cyan-400/40 transition-all" />
           <div>
             <div class="font-bold text-slate-100 tracking-tight flex items-center gap-2">
               <span>Suraj Vinod Miskin</span>
@@ -15,7 +13,7 @@ export function renderNavbar() {
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse mr-1.5"></span>Tata Elxsi
               </span>
             </div>
-            <p class="text-xs text-slate-400 font-mono hidden sm:block">Automotive ADAS &bull; Applied AI</p>
+            <p class="text-xs text-slate-400 font-mono hidden sm:block">Python Automation &bull; ADAS &bull; Applied AI</p>
           </div>
         </a>
 

@@ -93,7 +93,7 @@ export function renderContact() {
                   <label class="text-slate-300">Inquiry Domain / Reason</label>
                   <select id="form-subject" class="w-full bg-carbon-900 border border-white/10 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-cyan-400">
                     <option value="Automotive & ADAS Opportunity">Automotive & ADAS Opportunity</option>
-                    <option value="Applied AI / RAG Collaboration">Applied AI / RAG Collaboration</option>
+                    <option value="Python Automation / AI Collaboration">Python Automation / AI Collaboration</option>
                     <option value="Research & IEEE Paper Discussion">Research & IEEE Paper Discussion</option>
                     <option value="General Engineering Inquiry">General Engineering Inquiry</option>
                   </select>

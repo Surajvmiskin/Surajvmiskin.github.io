@@ -8,9 +8,7 @@ export function renderFooter() {
       <div class="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
         
         <div class="flex items-center gap-3">
-          <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center font-bold text-cyan-400">
-            SM
-          </div>
+          <img src="/favicon.svg" alt="Suraj Vinod Miskin Logo" class="w-8 h-8 rounded-lg shadow-sm" />
           <div>
             <div class="text-slate-200 font-semibold">${personal.name}</div>
             <div class="text-slate-500 text-[11px]">&copy; ${new Date().getFullYear()} &bull; Built with Vite & Tailwind CSS</div>

@@ -69,7 +69,7 @@ export function renderEducation() {
 
               <div class="px-4 py-2 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-center">
                 <div class="text-2xl font-bold font-mono text-cyan-400">${education.gpa}</div>
-                <div class="text-[10px] font-mono text-slate-400 uppercase">Cumulative GPA</div>
+                <div class="text-[10px] font-mono text-slate-400 uppercase">GPA</div>
               </div>
             </div>
 
