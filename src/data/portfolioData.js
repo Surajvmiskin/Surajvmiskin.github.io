@@ -1,17 +1,17 @@
 export const portfolioData = {
   personal: {
     name: "Suraj Vinod Miskin",
-    role: "Python Automation & Systems Engineer",
-    subRole: "Building Robust Python Automation Frameworks, ADAS Validation Pipelines & Applied AI",
+    role: "Python Automation & ADAS Validation Engineer",
+    subRole: "Automating ADAS Validation Workflows, Python Test Frameworks & Vehicle Diagnostics",
     email: "surajvmiskin@gmail.com",
     phone: "+91 80952 93563",
     location: "Bengaluru, India",
     domain: "surajvmiskin.com",
     github: "https://github.com/Surajvmiskin",
-    linkedin: "https://www.linkedin.com/in/suraj-v-miskin/",
+    linkedin: "https://www.linkedin.com/in/surajvmiskin",
     twitter: "https://twitter.com/Surajvmiskin",
     resumeUrl: "/Suraj_Vinod_Miskin_Resume.pdf",
-    bio: "Python Automation and Systems Engineer at Tata Elxsi Bengaluru. Specializing in Python-driven test automation frameworks, automated validation pipelines for ADAS features (MBRDI project), vehicle diagnostic scripting, and applied AI deep learning systems. Dedicated to transforming manual verification workflows into scalable, repeatable Python automated test suites.",
+    bio: "Python Automation & Validation Engineer at Tata Elxsi Bengaluru (onsite at Mercedes-Benz R&D). Specializing in Python-driven test automation frameworks, CustomTkinter GUI harnesses, Vector CANoe simulation, and ECU diagnostic validation. Dedicated to eliminating manual verification overhead with automated, reproducible test suites.",
   },
   metrics: [
     { label: "Primary Expertise", value: "Python Automation", detail: "Frameworks, PyTest & Scripts" },

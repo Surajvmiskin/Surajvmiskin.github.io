@@ -28,7 +28,7 @@ export function renderEducation() {
   ];
 
   const honorCards = honors.map(h => `
-    <div class="glass-card p-5 rounded-2xl border border-white/10 space-y-2 group hover:border-cyan-500/30 transition-all">
+    <div class="glass-card spotlight-card p-5 rounded-2xl border border-white/10 space-y-2 group hover:border-cyan-500/30 transition-all">
       <div class="flex items-center justify-between text-xs font-mono">
         <span class="text-cyan-400 font-medium">${h.org}</span>
         <span class="text-slate-500">${h.date}</span>
@@ -59,7 +59,7 @@ export function renderEducation() {
         <div class="grid lg:grid-cols-12 gap-8 items-start">
           
           <!-- Left: Degree Card -->
-          <div class="lg:col-span-7 glass-card rounded-3xl p-8 border border-white/10 space-y-6">
+          <div class="lg:col-span-7 glass-card spotlight-card rounded-3xl p-8 border border-white/10 space-y-6">
             <div class="flex flex-wrap items-center justify-between gap-4">
               <div>
                 <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">Degree Program</span>

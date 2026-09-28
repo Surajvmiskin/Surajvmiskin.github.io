@@ -13,7 +13,7 @@ export function renderNavbar() {
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse mr-1.5"></span>Tata Elxsi
               </span>
             </div>
-            <p class="text-xs text-slate-400 font-mono hidden sm:block">Python Automation &bull; ADAS &bull; Applied AI</p>
+            <p class="text-xs text-slate-400 font-mono hidden sm:block">Python Automation &bull; ADAS Validation &bull; Diagnostics</p>
           </div>
         </a>
 

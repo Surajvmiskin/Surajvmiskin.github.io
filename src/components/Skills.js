@@ -16,7 +16,7 @@ export function renderSkills() {
     `).join('');
 
     return `
-      <div class="glass-card rounded-2xl p-6 ${isPrimary ? 'border-cyan-500/40 bg-cyan-950/15 shadow-xl shadow-cyan-500/5' : 'border-white/10'} space-y-4 relative overflow-hidden group">
+      <div class="glass-card spotlight-card rounded-3xl p-6 sm:p-7 ${isPrimary ? 'border-cyan-500/40 bg-cyan-950/15 shadow-xl shadow-cyan-500/5' : 'border-white/10'} space-y-4 relative overflow-hidden group">
         ${isPrimary ? '<div class="absolute -top-10 -right-10 w-28 h-28 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>' : ''}
         <div>
           <div class="flex items-center justify-between">

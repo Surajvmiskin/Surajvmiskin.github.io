@@ -1,6 +1,5 @@
 import './styles/index.css';
-import { renderNavbar } from './components/Navbar.js';
-import { renderHero } from './components/Hero.js';
+import { renderHero, initHeroRoleAnimation } from './components/Hero.js';
 import { renderExperience } from './components/Experience.js';
 import { renderProjects } from './components/Projects.js';
 import { renderPublication } from './components/Publication.js';
@@ -10,6 +9,8 @@ import { renderContact } from './components/Contact.js';
 import { renderFooter } from './components/Footer.js';
 import { renderProjectModal } from './components/ProjectModal.js';
 import { renderPipelineTracker, initPipelineObserver } from './components/PipelineTracker.js';
+import { initBackgroundCanvas } from './components/BackgroundCanvas.js';
+import { initSpotlightCards, initScrollReveal } from './utils/spotlight.js';
 
 let currentProjectFilter = 'all';
 
@@ -18,15 +19,14 @@ function renderApp() {
   if (!app) return;
 
   app.innerHTML = `
-    <div class="min-h-screen flex flex-col telemetry-grid">
-      <div id="navbar-container">
-        ${renderNavbar()}
-      </div>
+    <!-- Ambient Cyber Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
 
-      <!-- Left-Side Interactive Telemetry Pipeline Tracker -->
+    <div class="min-h-screen flex flex-col relative z-10">
+      <!-- Right-Side Minimal Pipeline Tracker -->
       ${renderPipelineTracker()}
 
-      <main class="flex-grow pt-16 sm:pt-20">
+      <main class="flex-grow">
         ${renderHero()}
         ${renderExperience()}
         <div id="projects-container">
@@ -45,6 +45,10 @@ function renderApp() {
 
   attachEventHandlers();
   initPipelineObserver();
+  initBackgroundCanvas();
+  initSpotlightCards();
+  initScrollReveal();
+  initHeroRoleAnimation();
 }
 
 function attachProjectFilterHandlers() {
@@ -59,6 +63,7 @@ function attachProjectFilterHandlers() {
           projContainer.innerHTML = renderProjects(currentProjectFilter);
           attachProjectFilterHandlers();
           attachModalHandlers();
+          initSpotlightCards();
         }
       }
     });

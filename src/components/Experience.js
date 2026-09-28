@@ -32,7 +32,7 @@ export function renderExperience() {
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 group-hover:bg-[#070A0F] transition-colors"></span>
         </div>
 
-        <div class="glass-card rounded-2xl p-6 border border-white/10 hover:border-cyan-500/30 transition-all space-y-4">
+        <div class="glass-card spotlight-card rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-cyan-500/30 transition-all space-y-5">
           <div class="flex flex-wrap items-center justify-between gap-3">
             <div>
               <div class="flex items-center gap-3">

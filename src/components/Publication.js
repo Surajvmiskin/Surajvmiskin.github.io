@@ -16,7 +16,7 @@ export function renderPublication() {
 
       <div class="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
         
-        <div class="glass-card rounded-3xl p-8 lg:p-12 border border-cyan-500/30 relative overflow-hidden shadow-2xl">
+        <div class="glass-card spotlight-card rounded-3xl p-8 lg:p-12 border border-cyan-500/30 relative overflow-hidden shadow-2xl">
           <!-- Top Badge Ribbon -->
           <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono font-semibold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">

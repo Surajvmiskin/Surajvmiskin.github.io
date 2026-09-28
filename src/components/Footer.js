@@ -11,7 +11,7 @@ export function renderFooter() {
           <img src="/favicon.svg" alt="Suraj Vinod Miskin Logo" class="w-8 h-8 rounded-lg shadow-sm" />
           <div>
             <div class="text-slate-200 font-semibold">${personal.name}</div>
-            <div class="text-slate-500 text-[11px]">&copy; ${new Date().getFullYear()} &bull; Built with Vite & Tailwind CSS</div>
+            <div class="text-slate-500 text-[11px]">&copy; ${new Date().getFullYear()}</div>
           </div>
         </div>
 

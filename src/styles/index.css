@@ -8,47 +8,120 @@
     color-scheme: dark;
   }
   body {
-    @apply bg-carbon-950 text-slate-200 font-sans selection:bg-cyan-500 selection:text-black antialiased;
+    @apply bg-carbon-950 text-slate-200 font-sans selection:bg-cyan-500 selection:text-black antialiased overflow-x-hidden;
     background-image: 
-      radial-gradient(at 15% 15%, rgba(0, 242, 254, 0.05) 0px, transparent 50%),
-      radial-gradient(at 85% 85%, rgba(14, 165, 233, 0.05) 0px, transparent 50%);
+      radial-gradient(at 10% 10%, rgba(0, 242, 254, 0.07) 0px, transparent 40%),
+      radial-gradient(at 90% 90%, rgba(37, 99, 235, 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(15, 23, 42, 0.5) 0px, transparent 80%);
   }
 }
 
-/* Custom glassmorphism and glow utilities */
+/* Canvas Background behind content */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+/* Glassmorphism & High-End Card Surfaces */
 .glass-panel {
-  background: rgba(16, 22, 34, 0.75);
-  backdrop-filter: blur(12px);
+  background: rgba(11, 15, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.glass-panel:hover {
-  border-color: rgba(0, 242, 254, 0.3);
-}
-
 .glass-card {
-  background: linear-gradient(135deg, rgba(22, 30, 46, 0.7) 0%, rgba(11, 15, 23, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(16, 22, 34, 0.75) 0%, rgba(10, 14, 22, 0.85) 100%);
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.07);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
 }
 
 .glass-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   border-color: rgba(0, 242, 254, 0.35);
-  box-shadow: 0 12px 30px -10px rgba(0, 242, 254, 0.15);
+  box-shadow: 0 16px 36px -12px rgba(0, 242, 254, 0.15), 0 0 20px -5px rgba(0, 242, 254, 0.1);
 }
 
-.telemetry-grid {
-  background-size: 28px 28px;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+/* Cursor Spotlight Hover Effect (Linear/Vercel style) */
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
 }
 
-/* Custom subtle scrollbar */
+.spotlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, -500px) var(--mouse-y, -500px),
+    rgba(0, 242, 254, 0.12),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+/* Animated Gradient Shimmer Text */
+.gradient-text-shimmer {
+  background: linear-gradient(90deg, #00F2FE 0%, #38BDF8 25%, #FFFFFF 50%, #38BDF8 75%, #00F2FE 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 6s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Scroll Reveal Animations */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ambient Pulse Glow */
+.pulse-glow {
+  box-shadow: 0 0 30px -5px rgba(0, 242, 254, 0.25);
+  animation: pulse-ring 4s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 20px -5px rgba(0, 242, 254, 0.15); }
+  100% { box-shadow: 0 0 35px 5px rgba(0, 242, 254, 0.35); }
+}
+
+/* Subtle Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
   background: #070A0F;
